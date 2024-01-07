@@ -27,4 +27,4 @@ jobs:
           npm ci
           npx ncc build index.js
           zip -j deploy.zip ./dist/*
-          aws lambda update-funcion-code --function-name=lambda-gha --zip-file=fileb://deploy.zip
+          aws lambda update-function-code --function-name=lambda-gha --zip-file=fileb://deploy.zip
